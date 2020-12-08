@@ -1,0 +1,102 @@
+object FrmWinDu: TFrmWinDu
+  Left = 0
+  Top = 0
+  Caption = 'Win Du'
+  ClientHeight = 654
+  ClientWidth = 900
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
+  object pnlScan: TPanel
+    Align = Top
+    Size.Width = 900.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object edtDirectory: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Text = 'C:\'
+      Size.Width = 649.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object btnScan: TButton
+      Align = Right
+      Position.X = 820.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Scan'
+      OnClick = btnScanClick
+    end
+    object btnBack: TButton
+      Align = Left
+      Enabled = False
+      Position.X = 57.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Back'
+      OnClick = btnBackClick
+    end
+    object btnUp: TButton
+      Align = Left
+      Enabled = False
+      Position.X = 114.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Up'
+      OnClick = btnUpClick
+    end
+    object btnOpen: TButton
+      Align = Left
+      Size.Width = 57.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Open'
+      OnClick = btnOpenClick
+    end
+  end
+  object timShow: TTimer
+    Enabled = False
+    OnTimer = timShowTimer
+    Left = 528
+    Top = 64
+  end
+  object pnlClient: TPanel
+    Align = Client
+    Size.Width = 900.000000000000000000
+    Size.Height = 607.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    OnResize = pnlClientResize
+  end
+  object StatusBar1: TStatusBar
+    Position.Y = 632.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 900.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    object lblStatus: TLabel
+      Align = Left
+      Size.Width = 449.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblDirectory: TLabel
+      Align = Client
+      Size.Width = 451.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lblDirectory'
+    end
+  end
+end

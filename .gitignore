@@ -1,0 +1,7 @@
+/OSX32/
+/Win32/
+/Win64/
+/__history/
+*.local
+*.identcache
+*.res
